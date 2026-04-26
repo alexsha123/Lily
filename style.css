@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI";
+  color: white;
+  background: linear-gradient(135deg,#2b061e,#7b123c,#ff4f8b);
+  background-size: 300% 300%;
+  animation: bg 8s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+@keyframes bg {
+  0%{background-position:0%}
+  50%{background-position:100%}
+  100%{background-position:0%}
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 40px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.yes {
+  background: #ff2f7d;
+  color: white;
+}
+
+.typing {
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(30,end) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from{width:0}
+  to{width:100%}
+}
+
+@keyframes blink {
+  50%{border-color:transparent}
+}
+
+.heart {
+  position: fixed;
+  bottom: -20px;
+  animation: float 5s linear infinite;
+}
+
+@keyframes float {
+  0%{transform:translateY(0);opacity:0}
+  10%{opacity:1}
+  100%{transform:translateY(-100vh);opacity:0}
+}
