@@ -147,7 +147,7 @@ function yes() {
 
   show(`
     <div style="font-size:92px;margin-bottom:10px;animation:heartbeat 1s infinite;">❤️</div>
-    <h1>She said YES!</h1>
+    <h1>You just said YES!!!!!!</h1>
     <p>You just made me the happiest person alive 💍</p>
     <button onclick="lastPage()">One last message 💌</button>
   `);
